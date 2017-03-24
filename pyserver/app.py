@@ -10,9 +10,6 @@ def app(config):
 
     app.config.from_object(config)
 
-    for handler in app.config["HANDLER"]:
-        app.logger.addHandler(handler)
-
     api = Api(app)
 
     api.add_resource(Hello, '/')
