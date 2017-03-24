@@ -1,11 +1,5 @@
 *.pyc
 .idea
 env
-tmp
-*.log
-build
-html-coverage
 
-
-sandbox
 

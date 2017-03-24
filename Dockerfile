@@ -13,7 +13,6 @@ ADD ./start.py /pyrest/start.py
 EXPOSE 8000
 
 # install Python environment
-ADD requirements.txt requirements.txt
-RUN pip install -r requirements.txt && rm requirements.txt
+RUN pip install waitress flask-restful
 
 CMD python /pyrest/start.py
