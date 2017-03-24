@@ -4,6 +4,7 @@ from flask_restful import Api
 from pyserver.srv.performance import Performance
 from pyserver.srv.hello import Hello
 
+
 def app(config):
     app = Flask(__name__)
 

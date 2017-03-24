@@ -10,8 +10,6 @@ ADD ./config /pyrest/config
 ADD ./pyserver /pyrest/pyserver
 ADD ./start.py /pyrest/start.py
 
-WORKDIR pyrest
-
 EXPOSE 8000
 
 # install Python environment

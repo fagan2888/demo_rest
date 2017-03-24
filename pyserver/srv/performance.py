@@ -10,4 +10,4 @@ class Performance(Resource):
         # be more explicit...
         data = json.loads(request.data.decode("utf-8"))
         series = pd.read_json(data["series"], typ="series")
-        return jsonify({"performance": series.summary().to_json(date_format="epoch", double_precision=2)})
+        return jsonify({"performance": series.describe().to_json()})
