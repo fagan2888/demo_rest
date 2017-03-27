@@ -3,7 +3,7 @@ import requests
 
 import pandas as pd
 
-
+# to make this work you have to start the server (via docker run -d -p "6220:8000" --name "RestServer" restserver)
 if __name__ == '__main__':
     # some series
     x = pd.Series(index=[0, 1, 2], data=[5, 6, 7])
